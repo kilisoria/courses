@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev2": "NODE_OPTIONS='--openssl-legacy-provider --inspect'next",
+    "build2": "NODE_OPTIONS='--openssl-legacy-provider' next build",     
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider --inspect' NEXT_PUBLIC_SPACE_ID='7531chs42zds' NEXT_PUBLIC_ACCESS_TOKEN='CFPAT-7t1s3QBUeRHzjU3TehpoS3IfMvHpHqeQjs43VFbgr-Y' next",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' NEXT_PUBLIC_SPACE_ID='7531chs42zds' NEXT_PUBLIC_ACCESS_TOKEN='CFPAT-7t1s3QBUeRHzjU3TehpoS3IfMvHpHqeQjs43VFbgr-Y' next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
